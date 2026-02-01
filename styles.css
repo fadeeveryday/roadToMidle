@@ -57,3 +57,10 @@ body {
   font-size: 36px;
   justify-content: center;
 }
+
+.positive {
+  color: green;
+}
+.negative {
+  color: red;
+}
