@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <section class="add-task">
+      <div class="priority">
+        <span class="add-select-title">
+          Приоритет:
+        </span>
+        <select class="select select__add" id="select">
+          <option value="Низкий">Низкий</option>
+          <option value="Средний">Средний</option>
+          <option value="Высокий">Высокий</option>
+        </select>
+      </div>
+      <div class="input-task">
+        <span class="task-title">Текст задачи</span>
+        <input class="task-input" type="text" placeholder="Введите текст">
+      </div>
+      <div class="sumbut">
+        <button class="submit-btn">
+          Пульнуть
+        </button>
+      </div>
+    </section>
+    <section class="filters">
+      <div class="left-bar">
+        <div class="priority-filter">
+          <span class="priority-title">Фильтр по приоритету</span>
+        <select class="select select__filter" id="select__filter">
+          <option value="Любой">Любой</option>
+          <option value="Низкий">Низкий</option>
+          <option value="Средний">Средний</option>
+          <option value="Высокий">Высокий</option>
+        </select>
+        </div>
+        <span class="date-sort">Сортировка по дате</span>
+        <select class="select select__date" id="select__date">
+          <option value="Дата создания ↑">Дата создания ↑</option>
+          <option value="Дата создания ↓">Дата создания ↓</option>
+        </select>
+      </div>
+      <div class="right-bar">
+        <div class="status-filter">
+          <span class="filter__status">Фильтр по статусу</span>
+          <label class="label">
+            <input class="filter-checkbox" type="checkbox"> Активные
+          </label>
+          <label class="label">
+            <input class="filter-checkbox" type="checkbox"> Отменённые
+          </label>
+          <label class="label">
+            <input class="filter-checkbox" type="checkbox"> Завершённые
+          </label>
+        </div>
+        <div class="priority-sort">
+          <span class="date-sort">Сортировка по дате</span>
+          <select class="select select__date" id="select__date">
+            <option value="Приоритет ↑">Приоритет ↑</option>
+            <option value="Приоритет ↓">Приоритет ↓</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    <section class="tasks">
+
+    </section>
+  </div>
+</body>
+</html>
